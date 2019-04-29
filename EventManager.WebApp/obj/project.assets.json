@@ -12134,11 +12134,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Timo\\Documents\\BackEnd_Project\\EventManager\\EventManager.API.csproj",
-      "projectName": "EventManager.API",
-      "projectPath": "C:\\Users\\Timo\\Documents\\BackEnd_Project\\EventManager\\EventManager.API.csproj",
+      "projectUniqueName": "C:\\Users\\Timo\\Documents\\BackEnd_Project\\EventManager.WebApp\\EventManager.WebApp.csproj",
+      "projectName": "EventManager.WebApp",
+      "projectPath": "C:\\Users\\Timo\\Documents\\BackEnd_Project\\EventManager.WebApp\\EventManager.WebApp.csproj",
       "packagesPath": "C:\\Users\\Timo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Timo\\Documents\\BackEnd_Project\\EventManager\\obj\\",
+      "outputPath": "C:\\Users\\Timo\\Documents\\BackEnd_Project\\EventManager.WebApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
