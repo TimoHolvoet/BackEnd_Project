@@ -12134,9 +12134,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Timo\\Documents\\BackEnd_Project\\EventManager.WebApp\\EventManager.WebApp.csproj",
-      "projectName": "EventManager.WebApp",
-      "projectPath": "C:\\Users\\Timo\\Documents\\BackEnd_Project\\EventManager.WebApp\\EventManager.WebApp.csproj",
+      "projectUniqueName": "C:\\Users\\Timo\\Documents\\BackEnd_Project\\EventManager.WebApp\\EventManager.Core.csproj",
+      "projectName": "EventManager.Core",
+      "projectPath": "C:\\Users\\Timo\\Documents\\BackEnd_Project\\EventManager.WebApp\\EventManager.Core.csproj",
       "packagesPath": "C:\\Users\\Timo\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Timo\\Documents\\BackEnd_Project\\EventManager.WebApp\\obj\\",
       "projectStyle": "PackageReference",
