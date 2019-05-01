@@ -14,6 +14,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using EventManager.Core;
+using EventManager.Core.Repositories;
+using AutoMapper;
+
 namespace EventManager
 {
     public class Startup
@@ -28,6 +31,13 @@ namespace EventManager
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //dependency injection
+            services.AddScoped<IEventRepo, EventRepo>();
+
+            //use auto mapper
+            services.AddAutoMapper();
+
+
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.

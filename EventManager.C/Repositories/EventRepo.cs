@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace EventManager.Core.Repositories
 {
-     public class EventRepo
+     public class EventRepo : IEventRepo
     {
         //fields
         private readonly EventManagerDBContext _context;
