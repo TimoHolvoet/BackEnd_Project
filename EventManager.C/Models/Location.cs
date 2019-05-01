@@ -7,7 +7,8 @@ namespace EventManager.WebApp.Models
 {
     public class Location
     {
-        public string Longitude { get; set; }
-        public string Latitude { get; set; }
+        public Guid Id { get; set; }
+        public double Longitude { get; set; }
+        public double Latitude { get; set; }
     }
 }

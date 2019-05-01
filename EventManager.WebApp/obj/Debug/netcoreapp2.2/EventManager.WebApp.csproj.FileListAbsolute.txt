@@ -20,3 +20,11 @@ C:\Users\Timo\Documents\BackEnd_Project\EventManager.WebApp\obj\Debug\netcoreapp
 C:\Users\Timo\Documents\BackEnd_Project\EventManager.WebApp\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
 C:\Users\Timo\Documents\BackEnd_Project\EventManager.WebApp\obj\Debug\netcoreapp2.2\EventManager.WebApp.RazorTargetAssemblyInfo.cache
 C:\Users\Timo\Documents\BackEnd_Project\EventManager.WebApp\obj\Debug\netcoreapp2.2\EventManager.WebApp.RazorTargetAssemblyInfo.cs
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.WebApp\bin\Debug\netcoreapp2.2\EventManager.WebApp.pdb
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.WebApp\bin\Debug\netcoreapp2.2\EventManager.WebApp.Views.dll
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.WebApp\bin\Debug\netcoreapp2.2\EventManager.WebApp.Views.pdb
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.WebApp\obj\Debug\netcoreapp2.2\EventManager.WebApp.csprojAssemblyReference.cache
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.WebApp\obj\Debug\netcoreapp2.2\EventManager.WebApp.Views.pdb
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.WebApp\obj\Debug\netcoreapp2.2\EventManager.WebApp.dll
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.WebApp\obj\Debug\netcoreapp2.2\EventManager.WebApp.pdb
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.WebApp\obj\Debug\netcoreapp2.2\EventManager.WebApp.csproj.CopyComplete

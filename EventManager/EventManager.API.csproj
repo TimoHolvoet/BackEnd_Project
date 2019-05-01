@@ -6,9 +6,26 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="EntityFramework" Version="6.2.0" />
+    <Compile Remove="Migrations\20190501085909_init.cs" />
+    <Compile Remove="Migrations\20190501085909_init.Designer.cs" />
+    <Compile Remove="Migrations\20190501090049_init.cs" />
+    <Compile Remove="Migrations\20190501090049_init.Designer.cs" />
+    <Compile Remove="Migrations\20190501090200_DemoData.cs" />
+    <Compile Remove="Migrations\20190501090200_DemoData.Designer.cs" />
+    <Compile Remove="Migrations\20190501091704_init.cs" />
+    <Compile Remove="Migrations\20190501091704_init.Designer.cs" />
+    <Compile Remove="Migrations\20190501091919_Init.cs" />
+    <Compile Remove="Migrations\20190501091919_Init.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EventManager.C\EventManager.Core.csproj" />
   </ItemGroup>
 
 </Project>
