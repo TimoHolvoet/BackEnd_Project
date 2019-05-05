@@ -1,4 +1,6 @@
 ﻿using EventManager.WebApp.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -6,18 +8,19 @@ using System.Text;
 
 namespace EventManager.Core.Context
 {
-    public class EventManagerDBContext : DbContext
+    public class EventManagerDBContext : IdentityDbContext<IdentityUser>
     {
         public EventManagerDBContext(DbContextOptions<EventManagerDBContext> options)
             : base(options)
         {
 
         }
-        //dummy data toevoegen
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            Guid locationId = Guid.NewGuid();
+            base.OnModelCreating(modelBuilder); //must voor identity
 
+            Guid locationId = Guid.NewGuid();
             modelBuilder.Entity<Location>().HasData(
                 new Location
                 {
@@ -44,25 +47,11 @@ namespace EventManager.Core.Context
 
 
         }
-        //        for (var i = 1; i <= 10; i++)
-        //                {
-        //                    Event Event = new Event();
-        //        Event.EventID = i;
-        //                    Event.EventName = "EventName" + i;
-        //                    Event.EventDescription = "EventDescription" + i;
-        //                    Event.EventCapacity = 1000;
-        //                    Event.SoldTickets = 400;
-        //                    Event.ImageUrl = "fakeLink" + i + ".png";
-        //                    Event.Date = DateTime.Today;
-        //                    Event.EventGenre = "EventGenre" + 1;
-        //                    Event.Location = new Location
-        //                    {
-        //                        Longitude = 3.257726,
-        //                        Latitude = 50.819477
-        //                    };
-        //}
+        
         //init tabellen
         public DbSet<Event> Events { get; set; }
         public DbSet<Location> Locations { get; set; }
+
+        //hier later ev. nog relaties leggen
     }
 }

@@ -16,7 +16,7 @@ namespace EventManager.Core.Mapping
             CreateMap<Location, LocationDTO>();
 
             //apiResource --> domain class
-            CreateMap<EventDTO, Event>();
+            CreateMap<SaveEventDTO, Event>();
             CreateMap<LocationDTO, Location>();
         }
     }

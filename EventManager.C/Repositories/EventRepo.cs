@@ -26,18 +26,24 @@ namespace EventManager.Core.Repositories
            return await _context.Events
                 .Include(e => e.Location)
                 .OrderByDescending( e => e.Date)
-                .ToListAsync()                
-                ;
+                .ToListAsync();
         }
        
         public async Task<Event> GetAsync(Guid id)
         {
-            return await _context.Events.SingleOrDefaultAsync(e => e.Id == id);
+            return await _context.Events
+                .Include(e => e.Location)
+                .SingleOrDefaultAsync(e => e.Id == id);
         }
 
         public async Task<Event> AddAsync(Event eventobj)
         {
-            await _context.Locations.AddAsync(eventobj.Location);
+            Location location = await _context.Locations.
+                SingleOrDefaultAsync(l => l.Latitude == eventobj.Location.Latitude && l.Longitude == eventobj.Location.Longitude);
+
+            if (location != null)
+                eventobj.LocationId = location.Id;
+
             await _context.Events.AddAsync(eventobj);
             await _context.SaveChangesAsync();
 
@@ -47,7 +53,6 @@ namespace EventManager.Core.Repositories
         {
             //update kan niet voorafgaan door await!
             _context.Events.Update(eventobj);
-            
             await _context.SaveChangesAsync();
 
             return eventobj;

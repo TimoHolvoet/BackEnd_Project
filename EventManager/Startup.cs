@@ -16,6 +16,7 @@ using Microsoft.Extensions.Options;
 using EventManager.Core;
 using EventManager.Core.Repositories;
 using AutoMapper;
+using Microsoft.AspNetCore.Identity;
 
 namespace EventManager
 {
@@ -46,10 +47,12 @@ namespace EventManager
             });
 
             //access to database...
+            //migrationsAssembly geeft mee waar de migrations bijgehouden zullen worden.
             services.AddDbContext<EventManagerDBContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),b => b.MigrationsAssembly("EventManager.API")
             ));
 
+            services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<EventManagerDBContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
