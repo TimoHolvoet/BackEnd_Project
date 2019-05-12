@@ -25,7 +25,7 @@ namespace EventManager.Core.Repositories
         {
            return await _context.Events
                 .Include(e => e.Location)
-                .OrderByDescending( e => e.Date)
+                .OrderByDescending( e => e.StartDate)
                 .ToListAsync();
         }
        
@@ -53,6 +53,7 @@ namespace EventManager.Core.Repositories
         {
             //update kan niet voorafgaan door await!
             _context.Events.Update(eventobj);
+            //_context.Locations.Update(eventobj.Location);
             await _context.SaveChangesAsync();
 
             return eventobj;

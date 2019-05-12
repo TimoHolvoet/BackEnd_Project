@@ -40,3 +40,13 @@ C:\Users\Timo\Documents\BackEnd_Project\EventManager.WebApp\obj\Debug\netcoreapp
 C:\Users\Timo\Documents\BackEnd_Project\EventManager.WebApp\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
 C:\Users\Timo\Documents\BackEnd_Project\EventManager.WebApp\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
 C:\Users\Timo\Documents\BackEnd_Project\EventManager.WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Event\Index.g.cshtml.cs
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Event\Create.g.cshtml.cs
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Admin\IndexUsers.g.cshtml.cs
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Admin\IndexRoles.g.cshtml.cs
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Admin\CreateRole.g.cshtml.cs
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Admin\AddRoleToUser.g.cshtml.cs
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Event\Details.g.cshtml.cs
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Event\Edit.g.cshtml.cs
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Event\Delete.g.cshtml.cs
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Delete.g.cshtml.cs

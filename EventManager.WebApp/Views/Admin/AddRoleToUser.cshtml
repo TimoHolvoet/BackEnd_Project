@@ -1,0 +1,39 @@
+﻿@model EventManager.WebApp.ViewModels.RolesForUserVM
+
+@{
+    ViewData["Title"] = "AddRoleToUser";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>User een rol geven</h1>
+<div>Voor user:</div>
+<div>@Model.User.UserName</div>
+<form asp-action="AddRoleToUser">
+    <br />
+    <input type="hidden" asp-for="UserId" />
+    @if (Model.AssignedRoles.Count() > 0)
+    {
+        <div>User heeft deze rol(len):</div>
+        foreach (var role in Model.AssignedRoles)
+        {
+            <p>@role</p>
+        }
+    }
+    else
+    {
+        <div>User heeft nog geen rol</div>
+    }
+    <input type="hidden" name="UserId" value="@Model.UserId" />
+    <select asp-for="RoleName"
+            asp-items="@(new SelectList(Model.UnAssignedRoles))" class="custom-select"></select>
+    
+    <div>
+        <br />
+    <input type="submit" value="Rol toevoegen" class="btn btn-primary" />
+    </div>
+    
+</form>
+<div>
+    <a asp-action="IndexUsers">Terug naar lijst</a>
+</div>
+

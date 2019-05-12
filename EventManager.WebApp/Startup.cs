@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using EventManager.Core.Context;
+using EventManager.Core.Repositories;
+using EventManager.WebApp.Controllers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -36,9 +38,20 @@ namespace EventManager.WebApp
             services.AddDbContext<EventManagerDBContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("EventManager.API")
             ));
+            services.Configure<IdentityOptions>(options =>
+            {
+                options.Password.RequiredLength = 8;
+                options.User.RequireUniqueEmail = true;
+                options.User.RequireUniqueEmail = true;
+                options.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+ ";
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(30);
+            });
 
-            //services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<EventManagerDBContext>();
+            services.AddScoped<IEventRepo, EventRepo>();
+            //services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<EventManagerDBContext>();
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            //services.AddIdentity<IdentityUser, IdentityRole>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -65,7 +78,7 @@ namespace EventManager.WebApp
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Event}/{action=Index}/{id?}");
             });
         }
     }

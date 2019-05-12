@@ -1,0 +1,93 @@
+﻿@model EventManager.WebApp.Models.Event
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Event</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <textarea asp-for="Description" class="form-control"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StartDate" class="control-label"></label>
+                <input asp-for="StartDate" class="form-control" />
+                <span asp-validation-for="StartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EndDate" class="control-label"></label>
+                <input asp-for="EndDate" class="form-control" />
+                <span asp-validation-for="EndDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Genre" class="control-label"></label>
+                <input asp-for="Genre" class="form-control" />
+                <span asp-validation-for="Genre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageUrl" class="control-label"></label>
+                <input asp-for="ImageUrl" class="form-control" />
+                <span asp-validation-for="ImageUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Capacity" class="control-label"></label>
+                <input asp-for="Capacity" class="form-control" />
+                <span asp-validation-for="Capacity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldTickets" class="control-label"></label>
+                <input asp-for="SoldTickets" class="form-control" />
+                <span asp-validation-for="SoldTickets" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Location.Venue" class="control-label"></label>
+                <input asp-for="Location.Venue" class="form-control" asp-items="ViewBag.Location.Venue">
+                <span asp-validation-for="Location.Venue" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Location.Address" class="control-label"></label>
+                <input asp-for="Location.Address" class="form-control" asp-items="ViewBag.Location.Address">
+                <span asp-validation-for="Location.Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Location.City" class="control-label"></label>
+                <input asp-for="Location.City" class="form-control" asp-items="ViewBag.Location.City">
+                <span asp-validation-for="Location.City" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Location.Latitude" class="control-label"></label>
+                <input asp-for="Location.Latitude" class="form-control" asp-items="ViewBag.Location.Latitude">
+                <span asp-validation-for="Location.Latitude" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Location.Longitude" class="control-label"></label>
+                <input asp-for="Location.Longitude" class="form-control" asp-items="ViewBag.Location.Longitude">
+                <span asp-validation-for="Location.Latitude" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Opslaan" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Terug naar lijst</a>
+</div>
+

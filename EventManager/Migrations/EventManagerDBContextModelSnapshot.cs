@@ -26,10 +26,10 @@ namespace EventManager.API.Migrations
 
                     b.Property<int>("Capacity");
 
-                    b.Property<DateTime>("Date");
-
                     b.Property<string>("Description")
                         .HasMaxLength(300);
+
+                    b.Property<DateTime>("EndDate");
 
                     b.Property<string>("Genre");
 
@@ -41,6 +41,8 @@ namespace EventManager.API.Migrations
 
                     b.Property<int>("SoldTickets");
 
+                    b.Property<DateTime>("StartDate");
+
                     b.HasKey("Id");
 
                     b.HasIndex("LocationId");
@@ -50,15 +52,16 @@ namespace EventManager.API.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("5ba50ed3-85f0-430e-9738-9d1445976a92"),
+                            Id = new Guid("e921bd21-959d-46b4-8857-fb269a395d26"),
                             Capacity = 1000,
-                            Date = new DateTime(2019, 5, 2, 0, 0, 0, 0, DateTimeKind.Local),
                             Description = "EventDescription1",
+                            EndDate = new DateTime(2019, 5, 12, 0, 0, 0, 0, DateTimeKind.Local),
                             Genre = "EventGenre1",
                             ImageUrl = "Fakelink1.png",
-                            LocationId = new Guid("1e3370f4-ea98-4e26-a9df-1de5a10da8f0"),
+                            LocationId = new Guid("c7647299-eed8-4667-94c8-fc3c9d5f7f62"),
                             Name = "EventName1",
-                            SoldTickets = 400
+                            SoldTickets = 400,
+                            StartDate = new DateTime(2019, 5, 12, 0, 0, 0, 0, DateTimeKind.Local)
                         });
                 });
 
@@ -67,9 +70,15 @@ namespace EventManager.API.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<string>("Address");
+
+                    b.Property<string>("City");
+
                     b.Property<double>("Latitude");
 
                     b.Property<double>("Longitude");
+
+                    b.Property<string>("Venue");
 
                     b.HasKey("Id");
 
@@ -78,9 +87,12 @@ namespace EventManager.API.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("1e3370f4-ea98-4e26-a9df-1de5a10da8f0"),
+                            Id = new Guid("c7647299-eed8-4667-94c8-fc3c9d5f7f62"),
+                            Address = "EventAddress1",
+                            City = "EventCity1",
                             Latitude = 50.819476999999999,
-                            Longitude = 3.2577259999999999
+                            Longitude = 3.2577259999999999,
+                            Venue = "EventLocation1"
                         });
                 });
 

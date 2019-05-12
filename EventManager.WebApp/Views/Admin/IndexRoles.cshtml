@@ -1,0 +1,32 @@
+﻿@model IEnumerable<IdentityRole>
+
+@{
+    ViewData["Title"] = "IndexRoles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Rollen</h1>
+
+@if (!Model.Any())
+{
+    <div>Er zijn nog geen rollen aangemaakt.</div>
+    <a asp-action="CreateRole">Maak een rol aan</a>
+}
+else
+{
+    <a asp-action="CreateRole">Nieuwe rol toevoegen</a>
+    <table>
+        <tr>
+            <th>Role Id</th>
+            <th>Role Name</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+            </tr>
+        }
+    </table>
+}
+

@@ -17,7 +17,15 @@ namespace EventManager.WebApp.Areas.Identity
             try
             {
                 builder.ConfigureServices((context, services) => {
-                    services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<EventManagerDBContext>();
+                    
+                    //registratie van Users
+                    services
+                    .AddDefaultIdentity<IdentityUser>()
+                    .AddRoles<IdentityRole>()
+                    .AddEntityFrameworkStores<EventManagerDBContext>();
+
+                    //zou roles moeten registreren maar crasht
+                    //services.AddIdentity<IdentityUser, IdentityRole>();
                 });
             }
             catch(Exception ex)

@@ -25,6 +25,9 @@ namespace EventManager.Core.Context
                 new Location
                 {
                     Id = locationId,
+                    Venue = "EventLocation1",
+                    Address = "EventAddress1",
+                    City = "EventCity1",
                     Longitude = 3.257726,
                     Latitude = 50.819477
                 }
@@ -38,7 +41,8 @@ namespace EventManager.Core.Context
                     Capacity = 1000,
                     SoldTickets = 400,
                     ImageUrl = "Fakelink1.png",
-                    Date = DateTime.Today,
+                    StartDate = DateTime.Today,
+                    EndDate = DateTime.Today,
                     Genre = "EventGenre1",
                     LocationId = locationId
 

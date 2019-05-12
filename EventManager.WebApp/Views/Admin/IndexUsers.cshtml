@@ -1,0 +1,25 @@
+﻿@model  IEnumerable<IdentityUser>
+
+@{
+    ViewData["Title"] = "IndexUsers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Users</h1>
+<a href="/Identity/Account/Register">Maak een nieuwe gebruiker aan</a>
+<table>
+    <tr>
+        <th>User Name</th>
+        <th>Email</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>@item.UserName</td>
+        <td>@item.Email</td>
+        <td>@Html.ActionLink("Voeg een rol toe aan deze user", "AddRoleToUser", new { userId = item.Id })</td> 
+        @*<td><a asp-action="Delete" asp-route-id="@item.Id">Delete</a></td>*@
+    </tr>
+    }
+</table>

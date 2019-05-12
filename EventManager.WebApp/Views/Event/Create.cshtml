@@ -1,0 +1,89 @@
+﻿@model EventManager.WebApp.Models.Event
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>Event</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StartDate" class="control-label"></label>
+                <input asp-for="StartDate" class="form-control" />
+                <span asp-validation-for="StartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EndDate" class="control-label"></label>
+                <input asp-for="EndDate" class="form-control" />
+                <span asp-validation-for="EndDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Genre" class="control-label"></label>
+                <input asp-for="Genre" class="form-control" />
+                <span asp-validation-for="Genre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageUrl" class="control-label"></label>
+                <input asp-for="ImageUrl" class="form-control" />
+                <span asp-validation-for="ImageUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Capacity" class="control-label"></label>
+                <input asp-for="Capacity" class="form-control" />
+                <span asp-validation-for="Capacity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldTickets" class="control-label"></label>
+                <input asp-for="SoldTickets" class="form-control" />
+                <span asp-validation-for="SoldTickets" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Location.Venue" class="control-label"></label>
+                <input asp-for="Location.Venue" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Location.Address" class="control-label"></label>
+                <input asp-for="Location.Address" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Location.City" class="control-label"></label>
+                <input asp-for="Location.City" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Location.Longitude" class="control-label"></label>
+                <input asp-for="Location.Longitude" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Location.Latitude" class="control-label"></label>
+                <input asp-for="Location.Latitude" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Toevoegen" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

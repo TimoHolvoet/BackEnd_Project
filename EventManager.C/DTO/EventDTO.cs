@@ -18,7 +18,10 @@ namespace EventManager.Core.DTO
         public string Description { get; set; }
 
         [DataType(DataType.DateTime)]
-        public DateTime Date { get; set; }
+        public DateTime StartDate { get; set; }
+
+        [DataType(DataType.DateTime)]
+        public DateTime EndDate { get; set; }
 
         [DataType(DataType.Text)]
         public string Genre { get; set; }

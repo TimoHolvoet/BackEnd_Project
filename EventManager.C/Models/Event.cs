@@ -14,12 +14,17 @@ namespace EventManager.WebApp.Models
         [DataType(DataType.Text)]
         public string Name { get; set; }
 
-        [MaxLength(300)]
+        [MaxLength(1000)]
         [DataType(DataType.Text)]
         public string Description { get; set; }
 
         [DataType(DataType.DateTime)]
-        public DateTime Date { get; set; }
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy H:mm}")]
+        public DateTime StartDate { get; set; }
+
+        [DataType(DataType.DateTime)]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy H:mm}")]
+        public DateTime EndDate { get; set; }
 
         [DataType(DataType.Text)]
         public string Genre { get; set; }
