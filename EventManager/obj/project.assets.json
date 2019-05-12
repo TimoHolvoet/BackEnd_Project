@@ -13088,11 +13088,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Timo\\Documents\\BackEnd_Project\\EventManager\\EventManager.API.csproj",
+      "projectUniqueName": "C:\\Users\\Timo\\Desktop\\2NMCTBE_Holvoet_Timo_EventManager\\Project\\EventManager\\EventManager.API.csproj",
       "projectName": "EventManager.API",
-      "projectPath": "C:\\Users\\Timo\\Documents\\BackEnd_Project\\EventManager\\EventManager.API.csproj",
+      "projectPath": "C:\\Users\\Timo\\Desktop\\2NMCTBE_Holvoet_Timo_EventManager\\Project\\EventManager\\EventManager.API.csproj",
       "packagesPath": "C:\\Users\\Timo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Timo\\Documents\\BackEnd_Project\\EventManager\\obj\\",
+      "outputPath": "C:\\Users\\Timo\\Desktop\\2NMCTBE_Holvoet_Timo_EventManager\\Project\\EventManager\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13111,8 +13111,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Timo\\Documents\\BackEnd_Project\\EventManager.C\\EventManager.Core.csproj": {
-              "projectPath": "C:\\Users\\Timo\\Documents\\BackEnd_Project\\EventManager.C\\EventManager.Core.csproj"
+            "C:\\Users\\Timo\\Desktop\\2NMCTBE_Holvoet_Timo_EventManager\\Project\\EventManager.C\\EventManager.Core.csproj": {
+              "projectPath": "C:\\Users\\Timo\\Desktop\\2NMCTBE_Holvoet_Timo_EventManager\\Project\\EventManager.C\\EventManager.Core.csproj"
             }
           }
         }

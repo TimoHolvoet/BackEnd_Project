@@ -1,0 +1,17 @@
+C:\Users\Timo\Documents\BackEnd_Project\EventManager\bin\Release\netcoreapp2.2\EventManager.API.deps.json
+C:\Users\Timo\Documents\BackEnd_Project\EventManager\bin\Release\netcoreapp2.2\EventManager.API.runtimeconfig.json
+C:\Users\Timo\Documents\BackEnd_Project\EventManager\bin\Release\netcoreapp2.2\EventManager.API.runtimeconfig.dev.json
+C:\Users\Timo\Documents\BackEnd_Project\EventManager\bin\Release\netcoreapp2.2\EventManager.API.dll
+C:\Users\Timo\Documents\BackEnd_Project\EventManager\bin\Release\netcoreapp2.2\EventManager.API.pdb
+C:\Users\Timo\Documents\BackEnd_Project\EventManager\bin\Release\netcoreapp2.2\EventManager.Core.dll
+C:\Users\Timo\Documents\BackEnd_Project\EventManager\bin\Release\netcoreapp2.2\EventManager.Core.pdb
+C:\Users\Timo\Documents\BackEnd_Project\EventManager\obj\Release\netcoreapp2.2\EventManager.API.csprojAssemblyReference.cache
+C:\Users\Timo\Documents\BackEnd_Project\EventManager\obj\Release\netcoreapp2.2\EventManager.API.csproj.CoreCompileInputs.cache
+C:\Users\Timo\Documents\BackEnd_Project\EventManager\obj\Release\netcoreapp2.2\EventManager.API.RazorAssemblyInfo.cache
+C:\Users\Timo\Documents\BackEnd_Project\EventManager\obj\Release\netcoreapp2.2\EventManager.API.RazorAssemblyInfo.cs
+C:\Users\Timo\Documents\BackEnd_Project\EventManager\obj\Release\netcoreapp2.2\EventManager.API.AssemblyInfoInputs.cache
+C:\Users\Timo\Documents\BackEnd_Project\EventManager\obj\Release\netcoreapp2.2\EventManager.API.AssemblyInfo.cs
+C:\Users\Timo\Documents\BackEnd_Project\EventManager\obj\Release\netcoreapp2.2\EventManager.API.RazorTargetAssemblyInfo.cache
+C:\Users\Timo\Documents\BackEnd_Project\EventManager\obj\Release\netcoreapp2.2\EventManager.API.csproj.CopyComplete
+C:\Users\Timo\Documents\BackEnd_Project\EventManager\obj\Release\netcoreapp2.2\EventManager.API.dll
+C:\Users\Timo\Documents\BackEnd_Project\EventManager\obj\Release\netcoreapp2.2\EventManager.API.pdb

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using EventManager.Core.Repositories;
@@ -46,19 +47,25 @@ namespace EventManager.WebApp.Controllers
         {
             try
             {
-                // TODO: Add insert logic here
-                await eventRepo.AddAsync(eventobj);
+                if (!ModelState.IsValid)
+                {
+                    ModelState.AddModelError("", "Kan evenement niet toevoegen, Gelieve de velden te controleren.");
+                    return View();
+                }
                 
+                await eventRepo.AddAsync(eventobj);
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch(Exception ex)
             {
+                Debug.WriteLine("fout bij create" + ex);
                 return View();
             }
         }
 
         // GET: Event/Edit/5
         [HttpGet]
+        
         public async Task<ActionResult> Edit(Guid id)
         {
             var eventobj = await eventRepo.GetAsync(id);
@@ -72,13 +79,19 @@ namespace EventManager.WebApp.Controllers
         {
             try
             {
+                if (!ModelState.IsValid)
+                {
+                    ModelState.AddModelError("", "Edit kon niet uitgevoerd worden!");
+                    return View();
+                }
                 // TODO: Add update logic here
                 await eventRepo.UpdateAsync(eventobj);
 
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch(Exception ex)
             {
+                Debug.WriteLine("fout bij edit" + ex);
                 return View();
             }
         }
@@ -102,8 +115,9 @@ namespace EventManager.WebApp.Controllers
 
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch(Exception ex)
             {
+                Debug.WriteLine("fout bij delete" + ex);
                 return View();
             }
         }

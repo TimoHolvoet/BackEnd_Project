@@ -38,11 +38,6 @@ namespace EventManager.Core.Repositories
 
         public async Task<Event> AddAsync(Event eventobj)
         {
-            Location location = await _context.Locations.
-                SingleOrDefaultAsync(l => l.Latitude == eventobj.Location.Latitude && l.Longitude == eventobj.Location.Longitude);
-
-            if (location != null)
-                eventobj.LocationId = location.Id;
 
             await _context.Events.AddAsync(eventobj);
             await _context.SaveChangesAsync();
@@ -51,9 +46,18 @@ namespace EventManager.Core.Repositories
         }
         public async Task<Event> UpdateAsync(Event eventobj)
         {
-            //update kan niet voorafgaan door await!
+            //Location location = await _context.Locations.
+            //    SingleOrDefaultAsync(l => l.Latitude == eventobj.Location.Latitude && l.Longitude == eventobj.Location.Longitude);
+
+            //if (location != null)
+            //{
+            //    eventobj.LocationId = location.Id;
+            //    location.Venue = eventobj.Location.Venue;
+            //    location.Address = eventobj.Location.Address;
+            //    location.City = eventobj.Location.City;
+            //}
+
             _context.Events.Update(eventobj);
-            //_context.Locations.Update(eventobj.Location);
             await _context.SaveChangesAsync();
 
             return eventobj;

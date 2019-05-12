@@ -1,0 +1,11 @@
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.C\bin\Release\netcoreapp2.2\EventManager.Core.deps.json
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.C\bin\Release\netcoreapp2.2\EventManager.Core.runtimeconfig.json
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.C\bin\Release\netcoreapp2.2\EventManager.Core.runtimeconfig.dev.json
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.C\bin\Release\netcoreapp2.2\EventManager.Core.dll
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.C\bin\Release\netcoreapp2.2\EventManager.Core.pdb
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.C\obj\Release\netcoreapp2.2\EventManager.Core.csprojAssemblyReference.cache
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.C\obj\Release\netcoreapp2.2\EventManager.Core.csproj.CoreCompileInputs.cache
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.C\obj\Release\netcoreapp2.2\EventManager.Core.AssemblyInfoInputs.cache
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.C\obj\Release\netcoreapp2.2\EventManager.Core.AssemblyInfo.cs
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.C\obj\Release\netcoreapp2.2\EventManager.Core.dll
+C:\Users\Timo\Documents\BackEnd_Project\EventManager.C\obj\Release\netcoreapp2.2\EventManager.Core.pdb

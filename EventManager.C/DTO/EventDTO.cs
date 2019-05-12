@@ -9,18 +9,22 @@ namespace EventManager.Core.DTO
     {
         public Guid Id { get; set; }
 
-        //DataType in DTO nodig?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+        
         [DataType(DataType.Text)]
+        [Required]
         public string Name { get; set; }
 
-        [MaxLength(300)]
+        [MaxLength(1000)]
         [DataType(DataType.Text)]
+        [Required]
         public string Description { get; set; }
 
         [DataType(DataType.DateTime)]
+        [Required]
         public DateTime StartDate { get; set; }
 
         [DataType(DataType.DateTime)]
+        [Required]
         public DateTime EndDate { get; set; }
 
         [DataType(DataType.Text)]
@@ -29,11 +33,14 @@ namespace EventManager.Core.DTO
         [DataType(DataType.ImageUrl)]
         public string ImageUrl { get; set; }
 
+        [Required]
         public int Capacity { get; set; }
+        [Required]
         public int SoldTickets { get; set; }
 
-       
+
         //one to many - navigation property
+        [Required]
         public LocationDTO Location { get; set; }
     }
 }
